@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;font-family: 'Hind Vadodara', sans-serif;padding: 0;margin:0;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@600;700&display=swap');
+        .tw-container {
+            display: grid;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 16px;
+            padding-right: 3.875rem;
+                padding-left: 3.875rem;
+        }
+
+        @media (min-width: 1280px) {
+            .tw-container {
+                max-width: 1280px;
+                grid-template-areas: "A A B C""A A D D";   
+            }
+        }
+        @media (max-width: 1279px) {
+            .tw-container {
+                grid-template-areas: "A A B B"
+                "C C D D";
+            }
+        }
+        .box:nth-child(1) {
+            grid-area: A;
+            height: 560px;
+            background-image: url('https://stein.rifki.net/scienstein/wp-content/uploads/sites/4/2019/06/freestocks-org-484224-unsplash-1280x720.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box:nth-child(2) {
+            grid-area: B;
+            background-image: url('https://stein.rifki.net/scienstein/wp-content/uploads/sites/4/2019/06/balazs-ketyi-1410248-unsplash-640x360.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: calc((560px - (4px*4))/2);
+        }
+
+        .box:nth-child(3) {
+            grid-area: C;
+            background-image: url('https://stein.rifki.net/scienstein/wp-content/uploads/sites/4/2019/06/domenico-loia-272251-unsplash-640x360.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: calc((560px - (4px*4))/2);
+        }
+
+        .box:nth-child(4) {
+            grid-area: D;
+            background-image: url('https://stein.rifki.net/scienstein/wp-content/uploads/sites/4/2019/06/sabri-tuzcu-202937-unsplash-640x360.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: calc((560px - (4px*4))/2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tw-container">
+        <div class="box" style="position: relative;">
+            <div style="display: flex;
+            justify-content: flex-end;
+            height: 100%;flex-direction: column;padding:2.5rem;color: white;position: relative;z-index: 2;font-family: Hind Vadodara;">
+                <h3>MOBILE</h3>
+                <p style="font-size:22px;font-weight: 700;
+                letter-spacing: -.0125em;
+                line-height: 1.25;
+                text-transform: none;font-family: 'Hind Vadodara', sans-serif;"> Flutter and Fuchsia, the death of React & Android? </p>
+                <p>June 6,2020</p>
+            </div>
+            <div style="background:linear-gradient(0deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.1) 100%);position:absolute;top:0;right:0;left:0;bottom:0;z-index: 1;">
+                
+            </div>
+        </div>
+        <div class="box" style="position: relative;">
+            <div>
+                sdasds
+            </div>
+            <div
+                style="background:linear-gradient(0deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.1) 100%);position:absolute;top:0;right:0;left:0;bottom:0;">
+            </div>
+        </div>
+        <div class="box" style="position: relative;"><div>
+            sdasds
+        </div>
+            <div
+                style="background:linear-gradient(0deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.1) 100%);position:absolute;top:0;right:0;left:0;bottom:0;">
+            </div>
+        </div>
+        <div class="box" style="position: relative;">
+            <div
+                style="background:linear-gradient(0deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.1) 100%);position:absolute;top:0;right:0;left:0;bottom:0;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
